@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolo Encantado Confeitaria</title>
+    <style>
+        /* Estilos Globais e Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #E6D4B8; /* Cor de fundo bege claro da imagem */
+            color: #333;
+        }
+
+        /* Header (Barra Superior) */
+        header {
+            background-color: #5C1D1D; /* Cor marrom-avermelhada escura do header */
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header .logo-icon {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        header .title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Container Principal do Menu */
+        main {
+            padding: 30px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Grade do Menu (3 colunas) */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+            gap: 20px; /* Espaço entre os itens */
+        }
+
+        /* Cartão de Item de Bolo */
+        .cake-item {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .cake-item:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Círculo para a Imagem do Bolo */
+        .image-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Faz o círculo */
+            background-color: #F8F1E7; /* Cor de fundo clara do círculo na imagem */
+            overflow: hidden; /* Esconde o que sai do círculo */
+            margin: 0 auto 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Placeholder de Imagem de Bolo (substitua pelo URL real) */
+        .image-container img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        /* Botão Comprar */
+        .buy-button {
+            background-color: #5C1D1D; /* Mesma cor do header */
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .buy-button:hover {
+            background-color: #7E2828;
+        }
+
+        /* Preço, Nome e Descrição */
+        .price {
+            color: #8B1A1A; /* Cor marrom-avermelhada mais clara para o preço */
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        /* Responsividade para telas menores (2 colunas em tablets, 1 em celulares) */
+        @media (max-width: 900px) {
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-icon">&#x1F382;</div> <div class="title">Bolo Encantado Confeitaria</div>
+    </header>
+
+    <main>
+        <div class="menu-grid">
+
+            <div class="cake-item">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/300?text=Bolo+de+Pote" alt="Bolo de Pote">
+                </div>
+                <button class="buy-button">Comprar</button>
+                <div class="price">R$ 8.00 Real</div>
+                <div class="name">Bolo de Pote Ninho com Nutella</div>
+                <div class="description">Camadas deliciosas de creme de Ninho e Nutella genuína.</div>
+            </div>
+
+            <div class="cake-item">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/300?text=Bolo+Caseiro" alt="Bolo Caseiro">
+                </div>
+                <button class="buy-button">Comprar</button>
+                <div class="price">R$ 25.00 Real</div>
+                <div class="name">Bolo de Fubá da Vovó</div>
+                <div class="description">Receita tradicional de família, fofinho e com gostinho de infância.</div>
+            </div>
+
+            <div class="cake-item">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/300?text=Fatia+de+Bolo" alt="Fatia de Bolo">
+                </div>
+                <button class="buy-button">Comprar</button>
+                <div class="price">R$ 12.00 Real</div>
+                <div class="name">Fatia Duo Chocolate Belga</div>
+                <div class="description">Bolo de chocolate belga recheado com brigadeiro gourmet e creme branco.</div>
+            </div>
+
+            <div class="cake-item">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/300?text=Mini+Bolo" alt="Mini Bolo Decorado">
+                </div>
+                <button class="buy-button">Comprar</button>
+                <div class="price">R$ 45.00 Real</div>
+                <div class="name">Mini Bolo de Rosetas Recheado</div>
+                <div class="description">Perfeito para presente, decorado com rosetas de glacê real e muito recheio.</div>
+            </div>
+
+            <div class="cake-item">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/300?text=Bolo+Gelado" alt="Bolo Gelado">
+                </div>
+                <button class="buy-button">Comprar</button>
+                <div class="price">R$ 18.00 Real</div>
+                <div class="name">Bolo Gelado de Coco e Abacaxi</div>
+                <div class="description">Refrescante e molhadinho, com doce de abacaxi caseiro e creme de coco.</div>
+            </div>
+
+            <div class="cake-item">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/300?text=Kit+Docinhos" alt="Kit Docinhos">
+                </div>
+                <button class="buy-button">Comprar</button>
+                <div class="price">R$ 10.00 Real</div>
+                <div class="name">Kit com 6 Brigadeiros Gourmet</div>
+                <div class="description">Uma seleção irresistível: Brigadeiro Belga, Ninho com Nutella, Churros.</div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

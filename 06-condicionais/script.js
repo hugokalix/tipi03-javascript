@@ -71,3 +71,21 @@ if (1 > 2) {
 } else {
     console.log("Não temos condição verdadeira");
 } //
+
+
+
+//switch
+
+let idade = 18;
+
+switch(idade) {
+    case 18:
+        console.log("O usuário ja é mairo de idade ");
+        break;
+    case 17:
+        console.log("O usuário é menor de idade");
+        break;
+    default:
+        console.log("Idade inválida");
+}  
+

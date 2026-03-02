@@ -4,7 +4,7 @@ document.getElementById('btnVerificar').addEventListener('click', verificar);
 
 //Função
 function verificar(){
-    const input = document.getElementById("numero").value;
+    NO 
     const resultado = document.getElementById("resultado");
 
     const numero = Number(input);
@@ -22,3 +22,21 @@ function verificar(){
         resultado.style.color = "blue";
     }
 }
+
+
+let opcao = "chocolate";
+
+switch(opcao) {
+    case "pizza":
+        console.log("Pizza chegando!");
+        break;
+    case "sushi":
+        console.log("Sushi fresquinho!");
+        break;
+    case "hamburguer":
+        console.log("Hambúrguer suculento!");
+        break;
+    default:
+        console.log("Não temos esse produto!");
+}
+
