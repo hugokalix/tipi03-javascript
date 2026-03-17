@@ -99,3 +99,19 @@ list_nome.forEach(nome => {
 list_nome.forEach((nome, indice) => {
     console.log(indice, nome);
 });
+
+//iterando sobre um array
+const frutasF = ['Morango', 'Abacate', 'Goiaba'];
+
+for(const cada_fruta of frutasF) {
+    console.log(cada_fruta);
+}
+
+//iterando sobre uma string
+ const texto = 'Ola Mundo!'
+ for(const letra of texto) {
+    console.log(letra);
+ }
+
+
+
